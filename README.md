@@ -1,5 +1,7 @@
 # ROBOgram
 
+Made by Kevin bruyne
+
 [ROBOgram live][heroku]
 
 [heroku]: https://robogramapp.herokuapp.com/
@@ -14,35 +16,27 @@ Robogram is a web application inspired by Instagram designed exclusively for rob
 Users can sign up and log into ROBOgram. Passwords are secure and never saved into the database. User authentication is implemented using BCrypt to hash passwords into a session token
 to be passed on every request.  
 
-![Image of login-page](https://github.com/kingsleyliao/ROBOgram/blob/master/app/assets/images/login-page.png)
 
 ### Photo Feed
 
 Photos uploaded by the user's followed robots are shown here. After logging in, an AJAX request is made to the backend server to send photos. Photos listed on the photo feed are interactive. A user can see comments and likes for a photo and can also like and comment right on the feed.
 
-![Image of photo-feed](https://github.com/kingsleyliao/ROBOgram/blob/master/app/assets/images/photo-feed-page.png)
 
 ### User Profile
 
 On this page, a user can view photos uploaded by any particular user. A clickable list of all the photos by that user is displayed. A clicked image will bring up a modal that displays a detailed view of that photo by generating an AJAX request for that photo, likes, and comments. Users can also interact with the image in this view by liking and commenting.
 
-![Image of user-profile](https://github.com/kingsleyliao/ROBOgram/blob/master/app/assets/images/user-profile-page.png)
-
 ### Photo Uploading
 
 Users can upload photos through button on the NAVBAR that persist throughout the entire app. The button brings up a modal that allows users to drag and drop an image into the upload zone. Before the image is uploaded, users a preview of their upload is generated. Only when the upload button is clicked will the image actually be uploaded.
 
-![Image of upload-modal](https://github.com/kingsleyliao/ROBOgram/blob/master/app/assets/images/upload-photo-modal.png)
 
 ### Search
 Users can conveniently find other users by typing into the search bar. Typing into the search bar sends an AJAX request for users that match the user's query.
 
-![Image of searchbar](https://github.com/kingsleyliao/ROBOgram/blob/master/app/assets/images/searchbar.png)
 
 ### Discover
 Users can discover other users to follow in a convenient list. The discover feature sends an AJAX request for users the current user is not following.
-
-![Image of discover](https://github.com/kingsleyliao/ROBOgram/blob/master/app/assets/images/discover-page.png)
 
 ### Infinite Scrolling
 
@@ -51,6 +45,7 @@ The user's feed is optimized by loading images only when the user scrolls down t
 ## Technologies
 
 ### Backend
+
 [Ruby on Rails](https://http://rubyonrails.org/) a web application framework - is built at backend to provide RESTful API endpoints and progress data.
 
 [PostgreSQL](https://www.postgresql.org/) is used to store and retrieve data.
